@@ -1,0 +1,11 @@
+DockerBuild:
+  Id: python-builder
+  BaseImage: centos:7.8.2003
+  VersionTag: 3.8.3
+  BuildLatestTag: True
+  SubCollectionPath: builders
+  Arguments:
+    PYTHON_VERSION: 3.8.3
+    PYTHON_BASE_URL: http://artifactory.lab/artifactory/lab-int-general-artifacts/installs/p/python
+    PYTHON_PIP_VERSION: 20.1
+    PYTHON_PIP_BASE_URL: http://artifactory.lab/artifactory/lab-int-general-artifacts/installs/p/pip
